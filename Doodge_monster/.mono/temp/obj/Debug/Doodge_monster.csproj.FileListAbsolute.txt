@@ -1,0 +1,17 @@
+C:/games/Doodge_monster/.mono/temp/bin/Debug/Doodge_monster.dll
+C:/games/Doodge_monster/.mono/temp/bin/Debug/Doodge_monster.pdb
+C:/games/Doodge_monster/.mono/temp/obj/Debug/Doodge_monster.csproj.AssemblyReference.cache
+C:/games/Doodge_monster/.mono/temp/obj/Debug/Doodge_monster.GeneratedMSBuildEditorConfig.editorconfig
+C:/games/Doodge_monster/.mono/temp/obj/Debug/Doodge_monster.AssemblyInfoInputs.cache
+C:/games/Doodge_monster/.mono/temp/obj/Debug/Doodge_monster.AssemblyInfo.cs
+C:/games/Doodge_monster/.mono/temp/obj/Debug/Doodge_monster.csproj.CoreCompileInputs.cache
+C:/games/Doodge_monster/.mono/temp/obj/Debug/Doodge_monster.dll
+C:/games/Doodge_monster/.mono/temp/obj/Debug/Doodge_monster.pdb
+/home/kivi27/GodotProject/Doodge_monster/.mono/temp/bin/Debug/Doodge_monster.dll
+/home/kivi27/GodotProject/Doodge_monster/.mono/temp/bin/Debug/Doodge_monster.pdb
+/home/kivi27/GodotProject/Doodge_monster/.mono/temp/obj/Debug/Doodge_monster.csprojAssemblyReference.cache
+/home/kivi27/GodotProject/Doodge_monster/.mono/temp/obj/Debug/Doodge_monster.AssemblyInfoInputs.cache
+/home/kivi27/GodotProject/Doodge_monster/.mono/temp/obj/Debug/Doodge_monster.AssemblyInfo.cs
+/home/kivi27/GodotProject/Doodge_monster/.mono/temp/obj/Debug/Doodge_monster.csproj.CoreCompileInputs.cache
+/home/kivi27/GodotProject/Doodge_monster/.mono/temp/obj/Debug/Doodge_monster.dll
+/home/kivi27/GodotProject/Doodge_monster/.mono/temp/obj/Debug/Doodge_monster.pdb

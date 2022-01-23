@@ -1,0 +1,17 @@
+C:/games/PhysicGame/.mono/temp/bin/Debug/PhysicGame.dll
+C:/games/PhysicGame/.mono/temp/bin/Debug/PhysicGame.pdb
+C:/games/PhysicGame/.mono/temp/obj/Debug/PhysicGame.csproj.AssemblyReference.cache
+C:/games/PhysicGame/.mono/temp/obj/Debug/PhysicGame.GeneratedMSBuildEditorConfig.editorconfig
+C:/games/PhysicGame/.mono/temp/obj/Debug/PhysicGame.AssemblyInfoInputs.cache
+C:/games/PhysicGame/.mono/temp/obj/Debug/PhysicGame.AssemblyInfo.cs
+C:/games/PhysicGame/.mono/temp/obj/Debug/PhysicGame.csproj.CoreCompileInputs.cache
+C:/games/PhysicGame/.mono/temp/obj/Debug/PhysicGame.dll
+C:/games/PhysicGame/.mono/temp/obj/Debug/PhysicGame.pdb
+/home/kivi27/GodotProject/PhysicGame/.mono/temp/bin/Debug/PhysicGame.dll
+/home/kivi27/GodotProject/PhysicGame/.mono/temp/bin/Debug/PhysicGame.pdb
+/home/kivi27/GodotProject/PhysicGame/.mono/temp/obj/Debug/PhysicGame.csprojAssemblyReference.cache
+/home/kivi27/GodotProject/PhysicGame/.mono/temp/obj/Debug/PhysicGame.AssemblyInfoInputs.cache
+/home/kivi27/GodotProject/PhysicGame/.mono/temp/obj/Debug/PhysicGame.AssemblyInfo.cs
+/home/kivi27/GodotProject/PhysicGame/.mono/temp/obj/Debug/PhysicGame.csproj.CoreCompileInputs.cache
+/home/kivi27/GodotProject/PhysicGame/.mono/temp/obj/Debug/PhysicGame.dll
+/home/kivi27/GodotProject/PhysicGame/.mono/temp/obj/Debug/PhysicGame.pdb

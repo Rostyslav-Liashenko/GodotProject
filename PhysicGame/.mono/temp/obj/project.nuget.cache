@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "nv1/towt59upsp3lEViF8SjMRPHA491PVtXFCIJDmi0YyLbYlI0eSp/YwSRlnytS0aSq7ssjE/7O+M9/L5zkkg==",
+  "success": true,
+  "projectFilePath": "/home/kivi27/GodotProject/PhysicGame/PhysicGame.csproj",
+  "expectedPackageFiles": [
+    "/home/kivi27/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.0/microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "/home/kivi27/.nuget/packages/microsoft.netframework.referenceassemblies.net472/1.0.0/microsoft.netframework.referenceassemblies.net472.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

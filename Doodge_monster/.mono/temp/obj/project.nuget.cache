@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "WJoaWiGeBzFeNpqGlY2VYq3xeLigN3H2JSF5bOhv6aHv9hviAbKrebb1/y5aT32JiW+i3DK8o3aF7K4tv9BDRA==",
+  "success": true,
+  "projectFilePath": "/home/kivi27/GodotProject/Doodge_monster/Doodge_monster.csproj",
+  "expectedPackageFiles": [
+    "/home/kivi27/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.0/microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "/home/kivi27/.nuget/packages/microsoft.netframework.referenceassemblies.net472/1.0.0/microsoft.netframework.referenceassemblies.net472.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
