@@ -1,0 +1,9 @@
+/home/kivi27/GodotProject/FlappyBird/.mono/temp/bin/Debug/FlappyBird.dll
+/home/kivi27/GodotProject/FlappyBird/.mono/temp/bin/Debug/FlappyBird.pdb
+/home/kivi27/GodotProject/FlappyBird/.mono/temp/obj/Debug/FlappyBird.csproj.AssemblyReference.cache
+/home/kivi27/GodotProject/FlappyBird/.mono/temp/obj/Debug/FlappyBird.GeneratedMSBuildEditorConfig.editorconfig
+/home/kivi27/GodotProject/FlappyBird/.mono/temp/obj/Debug/FlappyBird.AssemblyInfoInputs.cache
+/home/kivi27/GodotProject/FlappyBird/.mono/temp/obj/Debug/FlappyBird.AssemblyInfo.cs
+/home/kivi27/GodotProject/FlappyBird/.mono/temp/obj/Debug/FlappyBird.csproj.CoreCompileInputs.cache
+/home/kivi27/GodotProject/FlappyBird/.mono/temp/obj/Debug/FlappyBird.dll
+/home/kivi27/GodotProject/FlappyBird/.mono/temp/obj/Debug/FlappyBird.pdb

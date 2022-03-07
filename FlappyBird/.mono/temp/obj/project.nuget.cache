@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "civprF/07I4nF8Oi9++9aB3zVYUik2CiAFSIjHqyPL/I25L2bRqNEKS/Xe9kwMKOEaMOO1uC35cqD2PQHhZWVw==",
+  "success": true,
+  "projectFilePath": "/home/kivi27/GodotProject/FlappyBird/FlappyBird.csproj",
+  "expectedPackageFiles": [
+    "/home/kivi27/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.2/microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
+    "/home/kivi27/.nuget/packages/microsoft.netframework.referenceassemblies.net472/1.0.2/microsoft.netframework.referenceassemblies.net472.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
