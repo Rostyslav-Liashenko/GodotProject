@@ -77,7 +77,7 @@ public class Spawner : Node2D
     {
         var createdCoin = (Coin) coinScene.Instance();
         createdCoin.GlobalPosition = pos;
-        AddChild(createdCoin);
+        EmitSignal(nameof(SpawnCoin), createdCoin);
     }
     
 }
