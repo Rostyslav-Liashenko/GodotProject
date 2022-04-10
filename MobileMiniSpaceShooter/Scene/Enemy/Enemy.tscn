@@ -1,19 +1,18 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Asset/Enemy/enemyRed2.png" type="Texture" id=1]
-[ext_resource path="res://Scene/Enemy/Enemy.cs" type="Script" id=2]
+[ext_resource path="res://Scene/Enemy/Enemy.cs" type="Script" id=1]
+[ext_resource path="res://Asset/Enemy/enemyRed2.png" type="Texture" id=2]
 
 [node name="Enemy" type="KinematicBody2D"]
 collision_layer = 4
 collision_mask = 10
-script = ExtResource( 2 )
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
-Speed = 200
 
 [node name="Sprite" type="Sprite" parent="."]
-texture = ExtResource( 1 )
+texture = ExtResource( 2 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PoolVector2Array( 0, -42, 18, -33, 18, -30, 33, -16, 51, -16, 52, -8, 25, 41, 7, 42, 9, 25, -9, 25, -6, 41, -23, 41, -52, -7, -52, -16, -35, -16, -18, -29, -18, -33 )

@@ -31,7 +31,7 @@ public class Player : KinematicBody2D
         if (collideObj != null && collideObj.Collider is Enemy enemy)
         {
             TakeDamage();
-            enemy.QueueFree();
+            enemy.Destroy();
         }
         ClampInScreen();
     }

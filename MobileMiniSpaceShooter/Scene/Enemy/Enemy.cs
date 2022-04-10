@@ -19,10 +19,10 @@ public class Enemy : KinematicBody2D
         var collisionObj = MoveAndCollide(new Vector2(0, 1) * speed * delta);
         if (collisionObj != null && collisionObj.Collider is Laser playerLaser)
         {
-            playerLaser.QueueFree();
+            playerLaser.Destroy();
             QueueFree();
         }
     }
 
-    private void Destroy() { QueueFree(); }
+    public void Destroy() { QueueFree(); }
 }

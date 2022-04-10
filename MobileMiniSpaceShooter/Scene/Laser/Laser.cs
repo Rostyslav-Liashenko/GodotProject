@@ -19,5 +19,5 @@ public class Laser : KinematicBody2D
         MoveAndCollide(velocity.Normalized() * speed * delta);
     }
 
-    private void Destroy() { QueueFree();}
+    public void Destroy() { QueueFree();}
 }
