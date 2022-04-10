@@ -1,0 +1,9 @@
+/home/kivi27/GodotProject/MobileMiniSpaceShooter/.mono/temp/bin/Debug/MobileMiniSpaceShooter.dll
+/home/kivi27/GodotProject/MobileMiniSpaceShooter/.mono/temp/bin/Debug/MobileMiniSpaceShooter.pdb
+/home/kivi27/GodotProject/MobileMiniSpaceShooter/.mono/temp/obj/Debug/MobileMiniSpaceShooter.csproj.AssemblyReference.cache
+/home/kivi27/GodotProject/MobileMiniSpaceShooter/.mono/temp/obj/Debug/MobileMiniSpaceShooter.GeneratedMSBuildEditorConfig.editorconfig
+/home/kivi27/GodotProject/MobileMiniSpaceShooter/.mono/temp/obj/Debug/MobileMiniSpaceShooter.AssemblyInfoInputs.cache
+/home/kivi27/GodotProject/MobileMiniSpaceShooter/.mono/temp/obj/Debug/MobileMiniSpaceShooter.AssemblyInfo.cs
+/home/kivi27/GodotProject/MobileMiniSpaceShooter/.mono/temp/obj/Debug/MobileMiniSpaceShooter.csproj.CoreCompileInputs.cache
+/home/kivi27/GodotProject/MobileMiniSpaceShooter/.mono/temp/obj/Debug/MobileMiniSpaceShooter.dll
+/home/kivi27/GodotProject/MobileMiniSpaceShooter/.mono/temp/obj/Debug/MobileMiniSpaceShooter.pdb

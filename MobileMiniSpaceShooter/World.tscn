@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Asset/background.png" type="Texture" id=1]
+[ext_resource path="res://Scene/Player/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://World.cs" type="Script" id=3]
+[ext_resource path="res://Scene/EnemySpawner/EnemySpawner.tscn" type="PackedScene" id=4]
+
+[node name="World" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Bacground" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 720, 1280 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 374, 1204 )
+
+[node name="EnemySpawner" parent="." instance=ExtResource( 4 )]

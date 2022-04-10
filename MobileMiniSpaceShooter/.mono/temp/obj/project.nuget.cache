@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "CkM//UuNadE53U7VWRwSNnynYvMVWBVtJBMnAUj35bXJ/D88WBF43Rtt2FAlTTgwd8OZwEF3jLSUXaQPsnaR/Q==",
+  "success": true,
+  "projectFilePath": "/home/kivi27/GodotProject/MobileMiniSpaceShooter/MobileMiniSpaceShooter.csproj",
+  "expectedPackageFiles": [
+    "/home/kivi27/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.2/microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
+    "/home/kivi27/.nuget/packages/microsoft.netframework.referenceassemblies.net472/1.0.2/microsoft.netframework.referenceassemblies.net472.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

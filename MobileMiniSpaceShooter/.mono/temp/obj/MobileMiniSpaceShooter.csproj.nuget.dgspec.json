@@ -1,0 +1,53 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/kivi27/GodotProject/MobileMiniSpaceShooter/MobileMiniSpaceShooter.csproj": {}
+  },
+  "projects": {
+    "/home/kivi27/GodotProject/MobileMiniSpaceShooter/MobileMiniSpaceShooter.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kivi27/GodotProject/MobileMiniSpaceShooter/MobileMiniSpaceShooter.csproj",
+        "projectName": "MobileMiniSpaceShooter",
+        "projectPath": "/home/kivi27/GodotProject/MobileMiniSpaceShooter/MobileMiniSpaceShooter.csproj",
+        "packagesPath": "/home/kivi27/.nuget/packages/",
+        "outputPath": "/home/kivi27/GodotProject/MobileMiniSpaceShooter/.mono/temp/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kivi27/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.2, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
