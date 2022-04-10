@@ -42,7 +42,7 @@ public class Spawner : Node2D
         coinScene = (PackedScene) ResourceLoader.Load("res://Scene/Coin/Coin.tscn");
         
         spawnEnemyTimer.Connect("timeout", this, nameof(CreateEnemies));
-        spawnCoinTimer.Connect("timeout", this, nameof(CreateCoin));
+        spawnCoinTimer.Connect("timeout", this, nameof(CreateCoinInRandomArea));
     }
 
     private Position2D GetRandomPosition()
@@ -54,12 +54,13 @@ public class Spawner : Node2D
     {
         var createdEnemy = (Enemy) enemyScene.Instance();
         createdEnemy.GlobalPosition = GetRandomPosition().GlobalPosition;
+        createdEnemy.Connect(nameof(Enemy.Dead), this, nameof(CreateCoinInPosition));
         EmitSignal(nameof(SpawnEnemy), createdEnemy);
     }
 
     private void IncreaseCountCoins() { countCoins++; }
     
-    private void CreateCoin()
+    private void CreateCoinInRandomArea()
     {
         if (countCoins <= 0) return;
         
@@ -70,7 +71,13 @@ public class Spawner : Node2D
         createdCoin.Connect(nameof(Coin.Collect), this, nameof(IncreaseCountCoins));
         countCoins--;
         EmitSignal(nameof(SpawnCoin), createdCoin);
+    }
 
+    private void CreateCoinInPosition(Vector2 pos)
+    {
+        var createdCoin = (Coin) coinScene.Instance();
+        createdCoin.GlobalPosition = pos;
+        AddChild(createdCoin);
     }
     
 }
