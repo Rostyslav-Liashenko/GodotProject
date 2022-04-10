@@ -35,6 +35,7 @@ public class World : Node2D
 
     private void AddEnemy(Enemy enemy)
     {
+        enemy.CalculateSpeed(score);
         AddChild(enemy);
     }
 
