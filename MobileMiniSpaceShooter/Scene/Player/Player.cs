@@ -2,9 +2,9 @@ using Godot;
 
 public class Player : KinematicBody2D
 {
-    [Export] private int speed = 500;
-    [Export] private int countLife = 3;
+    public int CountLife { get; private set; }
     
+    private int speed;
     private int halfWidthSheep;
     private int halfHeightSheep;
     private Vector2 velocity;
@@ -14,9 +14,11 @@ public class Player : KinematicBody2D
 
     [Signal] public delegate void Shoot(Vector2 fromShoot);
     [Signal] public delegate void Dead();
-    
+    [Signal] public delegate void TakeDamage();
     public override void _Ready()
     {
+        speed = 500;
+        CountLife = 3;
         velocity = Vector2.Zero;
         halfWidthSheep = GetNode<Sprite>("Sprite").Texture.GetWidth() / 2;
         halfHeightSheep = GetNode<Sprite>("Sprite").Texture.GetHeight() / 2;
@@ -30,16 +32,17 @@ public class Player : KinematicBody2D
         var collideObj = MoveAndCollide(velocity.Normalized() * speed * delta);
         if (collideObj != null && collideObj.Collider is Enemy enemy)
         {
-            TakeDamage();
+            DecreaseHealthy();
             enemy.Destroy();
         }
         ClampInScreen();
     }
 
-    private void TakeDamage()
+    private void DecreaseHealthy()
     {
-        countLife--;
-        if (countLife == 0)
+        CountLife --;
+        EmitSignal(nameof(TakeDamage));
+        if (CountLife == 0)
             EmitSignal(nameof(Dead));
     }
     

@@ -10,6 +10,7 @@
 script = ExtResource( 3 )
 
 [node name="Bacground" type="Sprite" parent="."]
+position = Vector2( 0, -2 )
 texture = ExtResource( 1 )
 centered = false
 region_enabled = true
@@ -19,5 +20,6 @@ region_rect = Rect2( 0, 0, 720, 1280 )
 position = Vector2( 374, 1204 )
 
 [node name="Spawner" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1, 223 )
 
 [node name="HUD" parent="." instance=ExtResource( 5 )]

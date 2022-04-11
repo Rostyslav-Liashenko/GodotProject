@@ -3,7 +3,6 @@ using Godot;
 public class World : Node2D
 {
     private int score;
-
     private Player player;
     private Spawner spawner;
     private HUD hud;
@@ -15,10 +14,12 @@ public class World : Node2D
         player = GetNode<Player>("Player");
         spawner = GetNode<Spawner>("Spawner");
         hud = GetNode<HUD>("HUD");
+        hud.InitVal(player.CountLife);
         laserScene = (PackedScene) ResourceLoader.Load("res://Scene/Laser/Laser.tscn");
         
         player.Connect(nameof(Player.Shoot), this, nameof(CreateLaser));
         player.Connect(nameof(Player.Dead), this, nameof(ReloadGame));
+        player.Connect(nameof(Player.TakeDamage), hud, nameof(hud.DecreaseHealthy));
         spawner.Connect(nameof(Spawner.SpawnEnemy), this, nameof(AddEnemy));
         spawner.Connect(nameof(Spawner.SpawnCoin), this, nameof(AddCoin));
     }
