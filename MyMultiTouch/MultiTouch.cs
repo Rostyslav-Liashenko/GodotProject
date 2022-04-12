@@ -3,7 +3,14 @@ using Godot;
 public class MultiTouch : Node2D
 {
     private Godot.Collections.Dictionary storeMulti = new Godot.Collections.Dictionary();
+    private Area2D areaMulti;
     
+    public override void _Ready()
+    {
+        areaMulti = GetNode<Area2D>("AreaMulti");
+        areaMulti.Connect("input_event", this, nameof(OnInputEvent));
+    }
+
     public override void _Process(float delta)
     {
         Update();
@@ -19,7 +26,7 @@ public class MultiTouch : Node2D
         }
     }
 
-    public override void _UnhandledInput(InputEvent ev)
+    public void OnInputEvent(Viewport viewport, InputEvent ev, int shapeIdx)
     {
         if (ev is InputEventScreenTouch screenTouch)
         {
