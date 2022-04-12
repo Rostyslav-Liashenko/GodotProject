@@ -1,0 +1,9 @@
+/home/kivi27/GodotProject/MyMultiTouch/.mono/temp/bin/ExportDebug/MyMultiTouch.dll
+/home/kivi27/GodotProject/MyMultiTouch/.mono/temp/bin/ExportDebug/MyMultiTouch.pdb
+/home/kivi27/GodotProject/MyMultiTouch/.mono/temp/obj/ExportDebug/MyMultiTouch.csproj.AssemblyReference.cache
+/home/kivi27/GodotProject/MyMultiTouch/.mono/temp/obj/ExportDebug/MyMultiTouch.GeneratedMSBuildEditorConfig.editorconfig
+/home/kivi27/GodotProject/MyMultiTouch/.mono/temp/obj/ExportDebug/MyMultiTouch.AssemblyInfoInputs.cache
+/home/kivi27/GodotProject/MyMultiTouch/.mono/temp/obj/ExportDebug/MyMultiTouch.AssemblyInfo.cs
+/home/kivi27/GodotProject/MyMultiTouch/.mono/temp/obj/ExportDebug/MyMultiTouch.csproj.CoreCompileInputs.cache
+/home/kivi27/GodotProject/MyMultiTouch/.mono/temp/obj/ExportDebug/MyMultiTouch.dll
+/home/kivi27/GodotProject/MyMultiTouch/.mono/temp/obj/ExportDebug/MyMultiTouch.pdb

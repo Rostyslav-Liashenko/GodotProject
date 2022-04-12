@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "AyvWNjpRh3w3nnxs81RDtn+dfD38ThvJGjzBOiL/CyGB18S3IBvQaDufmNzU7HcYdvWYvUyJjH9k3pHnvR3XOA==",
+  "success": true,
+  "projectFilePath": "/home/kivi27/GodotProject/MyMultiTouch/MyMultiTouch.csproj",
+  "expectedPackageFiles": [
+    "/home/kivi27/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.2/microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
+    "/home/kivi27/.nuget/packages/microsoft.netframework.referenceassemblies.net472/1.0.2/microsoft.netframework.referenceassemblies.net472.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
