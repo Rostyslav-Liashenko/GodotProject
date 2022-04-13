@@ -28,6 +28,17 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="PanelBottom" type="ColorRect" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -135.0
+mouse_filter = 2
+color = Color( 0.0235294, 0.207843, 0.341176, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="ButtonShoot" parent="." instance=ExtResource( 1 )]
-position = Vector2( 612, 977 )
-scale = Vector2( 1.64, 1.72 )
+position = Vector2( 633, 1008 )
+scale = Vector2( 1.31119, 1.3212 )
