@@ -11,13 +11,14 @@ script = ExtResource( 3 )
 
 [node name="Bacground" type="Sprite" parent="."]
 position = Vector2( 0, -2 )
+scale = Vector2( 1, 0.845313 )
 texture = ExtResource( 1 )
 centered = false
 region_enabled = true
 region_rect = Rect2( 0, 0, 720, 1280 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 374, 1204 )
+position = Vector2( 352, 990 )
 
 [node name="Spawner" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1, 223 )

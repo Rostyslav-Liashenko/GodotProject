@@ -52,6 +52,11 @@ public class Player : KinematicBody2D
             Mathf.Clamp(Position.x, halfWidthSheep, screenSize.x - halfWidthSheep),
             Mathf.Clamp(Position.y, halfHeightSheep, screenSize.y - halfHeightSheep));
     }
+
+    public void ShootLaser()
+    {
+        EmitSignal(nameof(Shoot), shootPosition.GlobalPosition);
+    }
     private void GetInput()
     {
         velocity = Vector2.Zero;
@@ -64,6 +69,6 @@ public class Player : KinematicBody2D
         if (Input.IsActionPressed("ui_down"))
             velocity.y++;
         if (Input.IsActionJustPressed("ui_select"))
-            EmitSignal(nameof(Shoot), shootPosition.GlobalPosition);
+            ShootLaser();
     }
 }

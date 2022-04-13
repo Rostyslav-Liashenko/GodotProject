@@ -5,13 +5,22 @@ public class HUD : CanvasLayer
 {
     private List<Sprite> healthyPlayer;
     private Label scoreLabel;
-    
+    private ButtonShoot btnShoot;
+
+    [Signal] public delegate void PressedBtnShoot();
     public override void _Ready()
     {
+        btnShoot = GetNode<ButtonShoot>("ButtonShoot");
         scoreLabel = GetNode<Label>("ScoreLabel");
         healthyPlayer = new List<Sprite>();
+
+        btnShoot.Connect("ClickShootButton", this, nameof(OnPressedBtnShoot));
     }
 
+    public void OnPressedBtnShoot()
+    {
+        EmitSignal(nameof(PressedBtnShoot));
+    }
     public void InitVal(int countLife)
     {
         var healthyIcon =  ResourceLoader.Load("res://Asset/Player/playerShip3_green.png") as Texture;

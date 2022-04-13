@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
+[ext_resource path="res://Scene/HUD/ButtonShoot/ButtonShoot.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scene/HUD/HUD.cs" type="Script" id=2]
 [ext_resource path="res://Asset/Font/MainFont.tres" type="DynamicFont" id=3]
 
@@ -27,4 +28,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="ButtonShoot" parent="." instance=ExtResource( 1 )]
+position = Vector2( 612, 977 )
+scale = Vector2( 1.64, 1.72 )
