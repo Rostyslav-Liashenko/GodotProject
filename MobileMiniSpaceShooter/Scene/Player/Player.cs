@@ -10,7 +10,8 @@ public class Player : KinematicBody2D
     private int halfHeightSheep;
     private Vector2 velocity;
     private Vector2 screenSize;
-    
+    private float limitYBottom;
+    private float limitYTop;
     private Position2D shootPosition;
 
     [Signal] public delegate void Shoot(Vector2 fromShoot);
@@ -18,6 +19,8 @@ public class Player : KinematicBody2D
     [Signal] public delegate void TakeDamage();
     public override void _Ready()
     {
+        limitYBottom = GlobalPosition.y;
+        limitYTop = 163;
         speed = 0;
         CountLife = 3;
         velocity = Vector2.Zero;
@@ -57,7 +60,7 @@ public class Player : KinematicBody2D
     {
        Position = new Vector2(
             Mathf.Clamp(Position.x, halfWidthSheep, screenSize.x - halfWidthSheep),
-            Mathf.Clamp(Position.y, halfHeightSheep, screenSize.y - halfHeightSheep));
+            Mathf.Clamp(Position.y, limitYTop + halfHeightSheep, limitYBottom));
     }
 
     public void ShootLaser()
