@@ -24,8 +24,8 @@ public class AnalogStick : Node2D
             topStick.Position = GetLocalMousePosition();
             if (topStick.Position.DistanceTo(Vector2.Zero) > 64)
                 topStick.Position = topStick.Position.Normalized() * 63;
-            EmitSignal(nameof(MoveTopStick), topStick.Position);
         }
+        EmitSignal(nameof(MoveTopStick), topStick.Position);
     }
     
     public override void _UnhandledInput(InputEvent ev)

@@ -3,8 +3,9 @@ using Godot;
 public class Player : KinematicBody2D
 {
     public int CountLife { get; private set; }
-    
-    private int speed;
+
+    private float MaxSpeed = 500;
+    private float speed;
     private int halfWidthSheep;
     private int halfHeightSheep;
     private Vector2 velocity;
@@ -17,7 +18,7 @@ public class Player : KinematicBody2D
     [Signal] public delegate void TakeDamage();
     public override void _Ready()
     {
-        speed = 500;
+        speed = 0;
         CountLife = 3;
         velocity = Vector2.Zero;
         halfWidthSheep = GetNode<Sprite>("Sprite").Texture.GetWidth() / 2;
@@ -25,10 +26,10 @@ public class Player : KinematicBody2D
         shootPosition = GetNode<Position2D>("ShootPosition");
         screenSize = GetViewportRect().Size;
     }
-
+    
     public override void _PhysicsProcess(float delta)
     {
-        GetInput();
+        //GetInput();
         var collideObj = MoveAndCollide(velocity.Normalized() * speed * delta);
         if (collideObj != null && collideObj.Collider is Enemy enemy)
         {
@@ -38,6 +39,12 @@ public class Player : KinematicBody2D
         ClampInScreen();
     }
 
+    public void SetVelocityFromStick(Vector2 moveStick)
+    {
+        speed = MaxSpeed * moveStick.Length() / 63; // 63 is max length of vector moveStick
+        velocity = moveStick;
+    }
+    
     private void DecreaseHealthy()
     {
         CountLife --;
@@ -57,7 +64,8 @@ public class Player : KinematicBody2D
     {
         EmitSignal(nameof(Shoot), shootPosition.GlobalPosition);
     }
-    private void GetInput()
+    /*
+    private void GetInput() // for control from computer
     {
         velocity = Vector2.Zero;
         if (Input.IsActionPressed("ui_left"))
@@ -71,4 +79,5 @@ public class Player : KinematicBody2D
         if (Input.IsActionJustPressed("ui_select"))
             ShootLaser();
     }
+    */
 }

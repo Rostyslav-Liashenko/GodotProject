@@ -30,8 +30,8 @@ __meta__ = {
 }
 
 [node name="ButtonShoot" parent="." instance=ExtResource( 1 )]
-position = Vector2( 620, 963 )
-scale = Vector2( 1.31119, 1.3212 )
+position = Vector2( 599, 949 )
+scale = Vector2( 2, 2 )
 
 [node name="Stick" parent="." instance=ExtResource( 4 )]
-position = Vector2( 126, 958 )
+position = Vector2( 134, 944 )

@@ -6,17 +6,26 @@ public class HUD : CanvasLayer
     private List<Sprite> healthyPlayer;
     private Label scoreLabel;
     private ButtonShoot btnShoot;
+    private AnalogStick stick;
 
     [Signal] public delegate void PressedBtnShoot();
+
+    [Signal] public delegate void MoveAnalogStick();
     public override void _Ready()
     {
         btnShoot = GetNode<ButtonShoot>("ButtonShoot");
+        stick = GetNode<AnalogStick>("Stick");
         scoreLabel = GetNode<Label>("ScoreLabel");
         healthyPlayer = new List<Sprite>();
 
+        stick.Connect("MoveTopStick", this, nameof(OnMoveAnalogStick));
         btnShoot.Connect("ClickShootButton", this, nameof(OnPressedBtnShoot));
     }
 
+    public void OnMoveAnalogStick(Vector2 moveVector)
+    {
+        EmitSignal(nameof(MoveAnalogStick), moveVector);
+    }
     public void OnPressedBtnShoot()
     {
         EmitSignal(nameof(PressedBtnShoot));

@@ -17,6 +17,7 @@ public class World : Node2D
         hud.InitVal(player.CountLife);
         laserScene = (PackedScene) ResourceLoader.Load("res://Scene/Laser/Laser.tscn");
 
+        hud.Connect(nameof(HUD.MoveAnalogStick), player, nameof(player.SetVelocityFromStick));
         hud.Connect(nameof(HUD.PressedBtnShoot), player, nameof(player.ShootLaser));
         player.Connect(nameof(Player.Shoot), this, nameof(CreateLaser));
         player.Connect(nameof(Player.Dead), this, nameof(ReloadGame));
