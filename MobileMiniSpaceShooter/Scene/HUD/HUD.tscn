@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scene/HUD/ButtonShoot/ButtonShoot.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scene/HUD/HUD.cs" type="Script" id=2]
 [ext_resource path="res://Asset/Font/MainFont.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Scene/HUD/AnalogStick/AnalogStick.tscn" type="PackedScene" id=4]
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource( 2 )
@@ -28,17 +29,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="PanelBottom" type="ColorRect" parent="."]
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_top = -135.0
-mouse_filter = 2
-color = Color( 0.0235294, 0.207843, 0.341176, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="ButtonShoot" parent="." instance=ExtResource( 1 )]
-position = Vector2( 633, 1008 )
+position = Vector2( 620, 963 )
 scale = Vector2( 1.31119, 1.3212 )
+
+[node name="Stick" parent="." instance=ExtResource( 4 )]
+position = Vector2( 126, 958 )
