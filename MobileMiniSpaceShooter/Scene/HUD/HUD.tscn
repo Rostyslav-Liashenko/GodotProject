@@ -9,7 +9,7 @@
 script = ExtResource( 2 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_right = 722.0
+margin_right = 1079.0
 margin_bottom = 163.0
 color = Color( 0.0627451, 0.0196078, 0.223529, 1 )
 __meta__ = {
@@ -30,8 +30,9 @@ __meta__ = {
 }
 
 [node name="ButtonShoot" parent="." instance=ExtResource( 1 )]
-position = Vector2( 599, 949 )
-scale = Vector2( 2, 2 )
+position = Vector2( 916, 1753 )
+scale = Vector2( 3, 3 )
 
 [node name="Stick" parent="." instance=ExtResource( 4 )]
-position = Vector2( 134, 944 )
+position = Vector2( 205, 1733 )
+scale = Vector2( 1.5, 1.5 )
