@@ -9,6 +9,6 @@ radius = 45.0
 [node name="ButtonShoot" type="Node2D"]
 script = ExtResource( 2 )
 
-[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+[node name="ShootButton" type="TouchScreenButton" parent="."]
 normal = ExtResource( 1 )
 shape = SubResource( 1 )

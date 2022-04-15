@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scene/Enemy/Enemy.cs" type="Script" id=1]
 [ext_resource path="res://Asset/Enemy/enemyRed2.png" type="Texture" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 54.037
 
 [node name="Enemy" type="KinematicBody2D"]
 collision_layer = 4
@@ -14,7 +17,7 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 2 )
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PoolVector2Array( 0, -42, 18, -33, 18, -30, 33, -16, 51, -16, 52, -8, 25, 41, 7, 42, 9, 25, -9, 25, -6, 41, -23, 41, -52, -7, -52, -16, -35, -16, -18, -29, -18, -33 )
-
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )

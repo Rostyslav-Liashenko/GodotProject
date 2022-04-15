@@ -12,13 +12,28 @@ position = Vector2( 240, -71 )
 position = Vector2( 360, -71 )
 
 [node name="Pos2" type="Position2D" parent="."]
-position = Vector2( 120, -71 )
+position = Vector2( 137, -71 )
+
+[node name="Pos10" type="Position2D" parent="."]
+position = Vector2( 39, -71 )
 
 [node name="Pos4" type="Position2D" parent="."]
 position = Vector2( 480, -71 )
 
 [node name="Pos5" type="Position2D" parent="."]
 position = Vector2( 600, -71 )
+
+[node name="Pos6" type="Position2D" parent="."]
+position = Vector2( 720, -71 )
+
+[node name="Pos7" type="Position2D" parent="."]
+position = Vector2( 840, -71 )
+
+[node name="Pos8" type="Position2D" parent="."]
+position = Vector2( 949, -71 )
+
+[node name="Pos9" type="Position2D" parent="."]
+position = Vector2( 1042, -71 )
 
 [node name="SpawnEnemyTimer" type="Timer" parent="."]
 wait_time = 0.5
