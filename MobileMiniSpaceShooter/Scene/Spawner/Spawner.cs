@@ -15,6 +15,8 @@ public class Spawner : Node2D
     private PackedScene enemyScene;
     private PackedScene coinScene;
 
+    private const int countEnemyTextures = 20;
+    private Texture[] enemyTextures;
     [Signal] public delegate void SpawnCoin(Coin coin);
     [Signal] public delegate void SpawnEnemy(Enemy enemy);
 
@@ -34,7 +36,11 @@ public class Spawner : Node2D
                 var pos = (Position2D) child;
                 positions.Add(pos);
             }
-        
+
+        enemyTextures = new Texture[countEnemyTextures];
+        for (int i = 0; i < enemyTextures.Length; i++)
+            enemyTextures[i] = ResourceLoader.Load("res://Asset/Enemy/enemy_" + i + ".png") as Texture;
+
         spawnEnemyTimer = GetNode<Timer>("SpawnEnemyTimer");
         spawnCoinTimer = GetNode<Timer>("SpawnCoinTimer");
         
@@ -55,6 +61,7 @@ public class Spawner : Node2D
         var createdEnemy = (Enemy) enemyScene.Instance();
         createdEnemy.GlobalPosition = GetRandomPosition().GlobalPosition;
         createdEnemy.Connect(nameof(Enemy.Dead), this, nameof(CreateCoinInPosition));
+        createdEnemy.ChangeTextureSprite(enemyTextures[rnd.Next(0, countEnemyTextures - 1)]);
         EmitSignal(nameof(SpawnEnemy), createdEnemy);
     }
 

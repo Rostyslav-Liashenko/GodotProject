@@ -14,7 +14,12 @@ public class Enemy : KinematicBody2D
         vbn = GetNode<VisibilityNotifier2D>("VisibilityNotifier2D");
         vbn.Connect("screen_exited", this, nameof(Destroy));
     }
-    
+
+    public void ChangeTextureSprite(Texture enemyTexture)
+    {
+        var sprite = GetNode<Sprite>("Sprite");
+        sprite.Texture = enemyTexture;
+    }
     public override void _PhysicsProcess(float delta)
     {
         speed += boostSpeed;
