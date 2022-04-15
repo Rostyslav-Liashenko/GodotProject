@@ -1,24 +1,18 @@
 using Godot;
-using System;
-
 public class ButtonShoot : Node2D
 {
-    private Area2D area2d;
-
+    private TouchScreenButton shootBtn;
     [Signal] public delegate void ClickShootButton();
+
     public override void _Ready()
     {
-        area2d = GetNode<Area2D>("Area2D");
-        area2d.Connect("input_event", this, nameof(OnInputEvent));
+        shootBtn = GetNode<TouchScreenButton>("ShootButton");
+
+        shootBtn.Connect("pressed", this, nameof(OnPressed));
     }
 
-    public void OnInputEvent(Viewport viewport, InputEvent ev, int shapeIdx)
+    public void OnPressed()
     {
-        if (ev is InputEventScreenTouch screenTouch && screenTouch.Pressed)
-        {
-            GD.Print("ClickShootButton");
-            EmitSignal(nameof(ClickShootButton));
-        }
+        EmitSignal(nameof(ClickShootButton));
     }
-    
 }

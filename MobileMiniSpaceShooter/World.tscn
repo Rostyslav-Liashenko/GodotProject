@@ -19,7 +19,7 @@ region_rect = Rect2( 0, 0, 720, 1280 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 modulate = Color( 1, 0.980392, 0.980392, 1 )
-position = Vector2( 514, 1583 )
+position = Vector2( 507, 1504 )
 
 [node name="Spawner" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1, 223 )
