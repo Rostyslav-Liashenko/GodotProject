@@ -3,5 +3,7 @@
 [ext_resource path="res://Asset/Font/kenvector_future_thin.ttf" type="DynamicFontData" id=1]
 
 [resource]
-size = 134
+size = 86
+outline_size = 6
+outline_color = Color( 0.00392157, 0.00392157, 0.00392157, 1 )
 font_data = ExtResource( 1 )

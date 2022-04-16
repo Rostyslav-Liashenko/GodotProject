@@ -22,6 +22,6 @@ modulate = Color( 1, 0.980392, 0.980392, 1 )
 position = Vector2( 507, 1504 )
 
 [node name="Spawner" parent="." instance=ExtResource( 4 )]
-position = Vector2( 1, 223 )
+position = Vector2( 0, 52 )
 
 [node name="HUD" parent="." instance=ExtResource( 5 )]

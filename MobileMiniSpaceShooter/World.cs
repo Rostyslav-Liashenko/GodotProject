@@ -2,6 +2,7 @@ using Godot;
 
 public class World : Node2D
 {
+    private int costOneCoin;
     private int score;
     private Player player;
     private Spawner spawner;
@@ -11,6 +12,7 @@ public class World : Node2D
     public override void _Ready()
     {
         score = 0;
+        costOneCoin = 10;
         player = GetNode<Player>("Player");
         spawner = GetNode<Spawner>("Spawner");
         hud = GetNode<HUD>("HUD");
@@ -28,7 +30,7 @@ public class World : Node2D
 
     private void UpScore()
     {
-        score++;
+        score += costOneCoin;
         hud.UpScore(score);
     }
     private void ReloadGame()

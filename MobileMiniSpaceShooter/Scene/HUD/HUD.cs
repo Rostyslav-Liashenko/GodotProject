@@ -33,7 +33,7 @@ public class HUD : CanvasLayer
     public void InitVal(int countLife)
     {
         var healthyIcon =  ResourceLoader.Load("res://Asset/Player/playerShip3_green.png") as Texture;
-        Vector2 begCoordinateLineHealthy = new Vector2(50, 115);
+        Vector2 begCoordinateLineHealthy = new Vector2(50, 130);
         const int offsetBetweenShip = 67;
         for (int i = 0; i < countLife; i++)
         {

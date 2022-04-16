@@ -8,20 +8,12 @@
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource( 2 )
 
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_right = 1079.0
-margin_bottom = 163.0
-color = Color( 0.0627451, 0.0196078, 0.223529, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="ScoreLabel" type="Label" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -31.0
-margin_right = 70.0
-margin_bottom = 327.0
+margin_left = -168.0
+margin_right = -67.0
+margin_bottom = 199.0
 custom_fonts/font = ExtResource( 3 )
 text = "0
 "
@@ -36,3 +28,14 @@ scale = Vector2( 3, 3 )
 [node name="Stick" parent="." instance=ExtResource( 4 )]
 position = Vector2( 123, 1663 )
 scale = Vector2( 1.5, 1.5 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 22.0
+margin_top = -2.0
+margin_right = 356.0
+margin_bottom = 150.0
+custom_fonts/font = ExtResource( 3 )
+text = "score:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
