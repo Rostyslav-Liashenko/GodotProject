@@ -33,5 +33,5 @@ public class Enemy : KinematicBody2D
     }
     public void Destroy() { QueueFree(); }
 
-    public void CalculateSpeed(int val) { speed = val * 25 + 100; }
+    public void CalculateSpeed(int val) { speed = val * 10 + 100; }
 }

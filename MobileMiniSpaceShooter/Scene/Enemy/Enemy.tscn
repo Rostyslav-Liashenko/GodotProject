@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scene/Enemy/Enemy.cs" type="Script" id=1]
-[ext_resource path="res://Asset/Enemy/enemyRed2.png" type="Texture" id=2]
+[ext_resource path="res://Asset/Enemy/enemy_0.png" type="Texture" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 54.037
